@@ -1,0 +1,123 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    font-family: 'Geologica';
+}
+
+button {
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    top: 2em;
+    right: 2em;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+button svg:hover {
+    stroke: grey;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100lvh;
+    width: 75%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 1rem;
+}
+
+span {
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.musica {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    background-color: rgb(30, 30, 30);
+    padding: 2em;
+    border-radius: 2rem;
+}
+
+#copertina {
+    border-radius: .5rem;
+}
+
+audio {
+    border-radius: 4rem;
+    background-color: black;
+    outline: none;
+}
+
+.testo {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    padding: 4em;
+}
+
+p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+em {
+    font-weight: 500;
+    color: yellow;
+}
+
+@media (max-width: 1100px) {
+
+
+    body {
+        overflow: visible;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .musica {
+        width: 50%;
+        order: 2;
+        
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .testo {
+        width: 100%;
+        order: 1;
+        padding: 4em 0;
+    }
+    
+}
+
+@media (min-width: 1600px) {
+    p {
+        font-size: 1.75rem;
+    }
+}
+
