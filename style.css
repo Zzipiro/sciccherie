@@ -78,6 +78,7 @@ audio {
     justify-content: center;
     width: 75%;
     padding: 4em;
+    flex-shrink: 0;
 }
 
 p {
