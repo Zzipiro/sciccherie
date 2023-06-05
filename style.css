@@ -127,19 +127,23 @@ em {
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 695px) {
 
     button {
         visibility: hidden;
     }
 
+    .container {
+        width: 95%;
+    }
+
     p {
-        font-size: .875rem;
+        font-size: 1rem;
         line-height: 1.75;
     }
 
     .musica {
-        width: 100%;
+        width: 80%;
         margin-bottom: 4em;
         opacity: .25;
     }
@@ -154,7 +158,12 @@ em {
 }
 
 @media (max-width: 450px) {
+
+    .musica {
+        width: 90%;
+    }
+
     p {
-        font-size: .7rem;
+        font-size: .85rem;
     }
 }
