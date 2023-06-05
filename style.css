@@ -79,6 +79,7 @@ p {
     font-size: 1.25rem;
     line-height: 1.5;
     font-weight: 300;
+    margin: 0;
 }
 
 em {
@@ -121,3 +122,30 @@ em {
     }
 }
 
+@media (max-width: 650px) {
+
+    button {
+        visibility: hidden;
+    }
+
+    p {
+        font-size: .875rem;
+    }
+
+    .musica {
+        width: 100%;
+        margin-bottom: 4em;
+        opacity: .5;
+    }
+
+    .testo {
+        padding: 6em 0 2em 0;
+    }
+}
+
+@media (max-width: 450px) {
+    p {
+        font-size: .7rem;
+        line-height: 2;
+    }
+}

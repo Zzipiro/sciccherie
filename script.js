@@ -6,5 +6,3 @@ btnfull.addEventListener("click", ()=> {
         el.requestFullscreen()
     }
 })
-
-btnfull.click();
