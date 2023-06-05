@@ -56,6 +56,11 @@ span {
     background-color: rgb(30, 30, 30);
     padding: 2em;
     border-radius: 2rem;
+    opacity: .75;
+}
+
+.musica:hover {
+    opacity: 1;
 }
 
 #copertina {
@@ -76,7 +81,7 @@ audio {
 }
 
 p {
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     line-height: 1.5;
     font-weight: 300;
     margin: 0;
@@ -87,7 +92,7 @@ em {
     color: yellow;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1150px) {
 
 
     body {
@@ -116,7 +121,7 @@ em {
     
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1440px) {
     p {
         font-size: 1.75rem;
     }
@@ -130,12 +135,17 @@ em {
 
     p {
         font-size: .875rem;
+        line-height: 1.75;
     }
 
     .musica {
         width: 100%;
         margin-bottom: 4em;
-        opacity: .5;
+        opacity: .25;
+    }
+
+    .musica:hover {
+        opacity: 1;
     }
 
     .testo {
@@ -146,6 +156,5 @@ em {
 @media (max-width: 450px) {
     p {
         font-size: .7rem;
-        line-height: 2;
     }
 }
